@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  template: `
+    <h1>ForRoot / For Child Pattern</h1>
+    <main>
+      <router-outlet></router-outlet>
+      <button routerLink="/lazy">Load Lazy</button>
+      <button routerLink="/">Normal</button>
+    </main>
+  `,
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = 'demo';
+  title = "demo";
 }
