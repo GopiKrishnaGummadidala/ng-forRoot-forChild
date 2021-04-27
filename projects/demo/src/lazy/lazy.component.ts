@@ -1,11 +1,14 @@
+import { PollingService } from "./../../../polling/src/lib/polling.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-lazy",
-  templateUrl: "./lazy.component.html",
+  template: `<p>
+    Lazy Polling count times {{ pollingService.polling$ | async }}
+  </p>`,
 })
 export class LazyComponent implements OnInit {
-  constructor() {}
+  constructor(private pollingService: PollingService) {}
 
   ngOnInit() {}
 }
