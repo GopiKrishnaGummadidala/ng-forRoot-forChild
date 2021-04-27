@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
     <main>
       <router-outlet></router-outlet>
       <button routerLink="/lazy">Load Lazy</button>
-      <button routerLink="/">Normal</button>
+      <button routerLink="/">Home</button>
     </main>
   `,
   styleUrls: ["./app.component.scss"],
