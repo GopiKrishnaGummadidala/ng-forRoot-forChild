@@ -1,5 +1,5 @@
-import { PollingService } from "./../../../polling/src/lib/polling.service";
 import { Component, OnInit } from "@angular/core";
+import { PollingService } from "polling/polling";
 
 @Component({
   selector: "app-lazy",
