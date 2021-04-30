@@ -10,7 +10,7 @@ import { LazyRoutingModule } from "./lazy.routing.module";
   imports: [
     CommonModule,
     LazyRoutingModule,
-    PollingModule.forChild({ interval: 3000 }),
+    PollingModule.withConfig({ interval: 3000 }),
   ],
 })
 export class LazyModule {}

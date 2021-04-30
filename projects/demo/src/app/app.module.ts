@@ -12,7 +12,7 @@ import { PollingModule } from "polling";
     BrowserModule,
     HomeModule,
     AppRoutingModule,
-    PollingModule.forRoot(),
+    PollingModule.withConfig(),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -9,20 +9,14 @@ import { PollingComponent } from "./polling.component";
   exports: [PollingComponent],
 })
 export class PollingModule {
-  static forRoot(): ModuleWithProviders<PollingModule> {
-    return {
-      ngModule: PollingModule,
-      providers: [PollingService],
-    };
-  }
-  static forChild(config: PollingConfig): ModuleWithProviders<PollingModule> {
+  static withConfig(config?: PollingConfig) {
     return {
       ngModule: PollingModule,
       providers: [
         PollingService,
         {
           provide: INTERVAL,
-          useValue: config.interval || 2000,
+          useValue: config ? config.interval : 1000,
         },
       ],
     };
