@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { PollingService } from "polling/polling";
+import { PollingService } from "polling";
 
 @Component({
   selector: "app-home",

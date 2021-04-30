@@ -10,7 +10,6 @@ import { Component } from "@angular/core";
       <button routerLink="/">Home</button>
     </main>
   `,
-  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
   title = "demo";
